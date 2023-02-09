@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-style: solid;
+            border-bottom: 1px;
+            border-color: black;
+        }
+
+        nav{
+            background-color: rgb(169, 169, 221);
+            padding: 3px;
+            /* sombra */
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.329);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        article{
+            background-color: lightblue;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(144, 192, 207);
+            padding: 1px 5px;
+        }
+        
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Aaaaa</a>
+            <a href="#">Bbbbb</a>
+            <a href="#">Ccccc</a>
+            <a href="#">Ddddd</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Quaerat animi assumenda qui illo mollitia ad, eum at voluptate 
+                   recusandae libero tempora? Hic totam sint quod consectetur 
+                   officia beatae sed facere.</p>
+                   <aside>
+                        <p>Artigo escrito por Xico</p>
+                   </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Rogério</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir sse site em vários dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 720px)" srcset="Imagens/foto-p.png" 
+        type="image/png">
+        <source media="(max-width: 1020px)" srcset="Imagens/foto-m.png" 
+        type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+<!--    <audio src="musicas/El_manicero.mp3" controls autoplay></audio>-->
+    <audio preload="metadata" controls autoplay loop>
+        <source src="musicas/El_manicero.mp3" type="audio/mpeg">
+        <source src="musicas/El_manicero.ogg" type="audio/ogg">
+        <source src="musicas/El_manicero.wav" type="audio/wav">
+        <p>navegador incompativel
+            <a href="musicas/El_manicero.mp3">clique aqui para baixar</a>
+        </p>
+    </audio>
+
+    <h1>Reproduzindo Vídeo</h1>
+    <p>Vamos aprender a reproduzir vídeos</p>
+<!--    <video src="videos/14 Bis - Karaokê - Linda juventude.mp4" controls autoplay>14 bis</video> -->
+    <video width = "600" poster="thumb.jpg" controls autoplay>
+        <source src>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe 
+        width="560" height="315" 
+        src="https://www.youtube.com/embed/qlwRrsW9S1c" 
+        title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+         picture-in-picture" allowfullscreen>
+    </iframe>
+</body>
+</html>

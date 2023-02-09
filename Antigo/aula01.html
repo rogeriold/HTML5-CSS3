@@ -1,0 +1,220 @@
+<!-- (comentátios)  -->
+<!DOCTYPE html>    <!-- Instrução para o browser que indica a versão ou tipo do HTML -->
+
+<html lang = "pt-br">   <!--  TAG raiz/root ==> parâmetro lang: linguagem -->
+
+    <!--
+        WWW.W3.ORG   ===> site de validação de HTML
+    
+        opção VALIDATORS: testa a validação do arquivo HTML
+        opção CHEATSHEET: fornece help para tags
+        
+    -->
+
+    <head>   <!-- cabeçalho com informações da página -->
+        <title>Curso Completo de HTML - CFB Cursos</title>
+        <style>
+            a{display:block;}
+
+            article{
+               padding: 15px;
+               border: 1px solid #000;
+               border-radius: 10px;
+               background-color: #eee;
+               margin-bottom: 10px; 
+            }
+            article h1{
+                color: #f00
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+
+        <article>
+            <h1>CFB Cursos</h1>
+            <p>Canal de cursos gratuitos no Youtube</p>
+        </article>
+
+        <article>
+            <h1>Cursos Disponíveis</h1>
+            <p>HTML completo e profissional</p>
+            <p>CSS</p>
+            <p>Javascript</p>
+            <p>C++</p>
+            <p>Qt Creator</p>
+            <p>PHP/MYSQL</p>
+            <p>Unity / C#</p>
+            <p>Photoshop</p>
+            <p>Flash</p>
+            <p>Arduino</p>
+        </article>
+
+        <!-- formato clássico utilizando
+
+            <style>
+                a{display:block;}
+
+                .article{
+                   padding: 15px;
+                   border: 1px solid #000;
+                   border-radius: 10px;
+                   background-color: #eee;
+                   margin-bottom: 10px; 
+                }
+                .article h1{
+                    color: #f00
+                }
+            </style>
+
+            <div class="article">
+                <h1>CFB Cursos</h1>
+                <p>Canal de cursos gratuitos no Youtube</p>
+            </div>
+
+        -->
+
+
+    </body>
+    
+
+    <!--
+
+        AULA 5:
+         =============================================================================================
+
+         =============================================================================================
+
+         ---------------------------------------------------------------------------------------------
+        FIM DA AULA 5
+
+
+         AULA 4:
+         =============================================================================================
+         tag IMG carrega uma imagem
+             - SRC: nome da imagem
+             - USEMAP: nome do objeto map que conterá as coordenadas das áreas
+         tag MAP cria um mapa de coordenadas para áreas desejadas
+             - NAME: nome do objeto map
+             - ALT: nome da área
+             - SHAPE: a forma geomética utilizada para mapear uma área da imagem
+             - HREF: link
+             - TARGET: forma de abertura
+             - COORDS: coordenadas da área de acordo com a forma geométrica escolhida
+         =============================================================================================
+
+         <img src="Mapa.png" usemap="#mapaBrasil">
+         <map name="mapaBrasil">
+            <area alt="Sudeste" shape="poly" href="http://www.uol.com.br" target="_blank"
+                  coords="390,508,421,465,431,441,480,434,489,420,503,375,548,364,620,401,608,430,
+                           623,440,614,471,593,511,533,524,475,561,445,534,442,517,389,512">
+            <area alt="Norte" shape="rect" href="http://www.globo.com" target="_blank"
+                  coords="70,72,500,266">
+            <area alt="Norte" shape="circle" href="http://www.terra.com.br" target="_blank"
+                  coords="606,258,90">
+         </map>
+
+         ---------------------------------------------------------------------------------------------
+        FIM DA AULA 4
+
+
+        AULA 3:
+         =============================================================================================
+         tag FOOTER cria um rodapé para a página ou artigo
+         tab ADDRESS cria um endereço do autor da página ou artigo
+         =============================================================================================
+
+         <footer>
+            <address>
+                Autor: Rogério<br>
+                Entre em contato através de nosso <a href="http://www.uol.com.br" target="_blank">Contato</a>
+            </address>
+         </footer>
+
+         ---------------------------------------------------------------------------------------------
+        FIM DA AULA 3
+
+
+        AULA 2:
+         =============================================================================================
+         tag A cria links
+            - HREF: parâmetros da tag A
+            - #: desvio para labels
+            - TARGET: forma de abertura
+            - _BLANK: abre em uma nova aba
+         tag ID cria labels
+         tag BR pula linha
+         =============================================================================================
+
+         <a>TOPO</a>
+         <a href="#fim" id="topo">Vai para o FIM</a>
+         <br>
+         <a>Âncora vazia</a>
+         <a href="http://www.uol.com.br">Uol</a>
+         <a href="http://www.globo.com">Globo</a>
+         <a href="http://www.terra.com.br" target="_blank">Terra</a>
+         <a href="../aula03.html">Aula 3</a>
+         <a href="http://www.youtube.com/cfbcursos" target="_blank">Cana 1</a>
+         <a href="http://www.youtube.com/cfbcursos" target="_blank" rel="external" media="screen" hreflang="pt" type="text/html">
+            Canal</a>
+         <a href="logo.rar" download>Download da imagem</a>
+         <a href="mailto:canalfessorbruno@gmail.com?cc=canalbruno@gmail.com&cc=canalfessorbruno@gmail.com&Subject=CFG%Cursos&
+            body=Curso%de%HTML%Completo%e%Profissional">Enviar email</a>
+         <a href="javascript:alert('CFB Cursos');">Canal</a>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+         <a>FIM</a>
+         <a href="#topo" id="fim">Vai para o TOPO</a>
+
+         ---------------------------------------------------------------------------------------------
+        FIM DA AULA 2
+
+
+        AULA 1:
+         =============================================================================================
+         tag H mostra títulos
+         tag P mostra textos
+            - ABBR: cria uma legenda para uma abreviação
+         =============================================================================================
+
+         <p>Curso de <abbr title="Hypertext Markup Language">HTML</abbr> Completo e Profissional do <abbr title="Canal FB Cursos">CFBC</abbr></p>
+         <h1>CENTRAL DE CURSOS</h1>    <!-   a Tag "h" serve para títulos  ->
+         <h2>What is Lorem Ipsum?</h2>
+         <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+              make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+              typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+              including versions of Lorem Ipsum.
+         </p>
+         <h2>Where does it come from?</h2>
+         <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+             literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+             College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
+             and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum 
+             comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by 
+             Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+             The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+         </p>
+         <h2>CENTRAL DE CURSOS</h2>    <!-   a Tag "h" serve para títulos  ->
+         <h3>CENTRAL DE CURSOS</h3>    <!-   a Tag "h" serve para títulos  ->
+         <h4>CENTRAL DE CURSOS</h4>    <!-   a Tag "h" serve para títulos  ->
+         <h5>CENTRAL DE CURSOS</h5>    <!-   a Tag "h" serve para títulos  ->
+         <h6>CENTRAL DE CURSOS</h6>    <!-   a Tag "h" serve para títulos  ->
+         <p>Curso de HTML Completo e Profissional</p>   <!- a Tag "p" serve para apresentar textos no browse ->
+         <p>O estágio do curso é a aula 2 - seção 1</p>
+    -->
+
+</html>
+
